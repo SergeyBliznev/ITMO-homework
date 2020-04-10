@@ -1,0 +1,23 @@
+
+
+.blog {
+	text-align: center;
+}
+
+
+.color {
+    display: inline-block;
+    margin-right: 5px;
+    color: sandybrown;
+}
+
+.btn-a {
+    display: inline-block;
+    text-shadow: snow;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid blue;
+    border-radius: 50%;
+    background-color: coral;
+    cursor: pointer;
+}
