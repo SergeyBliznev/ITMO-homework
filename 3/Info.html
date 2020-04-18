@@ -1,9 +1,10 @@
 
 <html>
-<link rel="stylesheet" href=" css/style.css">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	 <title>Обратная связь </title>
+   <title>Обратная связь </title>
+   <link rel="stylesheet" href=" css/style.css">
 	</head>
 <body>
   <div class="container">
@@ -12,93 +13,77 @@
    <p id="description"> Завершите свой опрос интересов карьеры, чтобы помочь вам найти карьеру, наиболее подходящую для вас, на основе вашего личного профиля. Это поможет нам оценить ваши возможности и дать вам информативный отчет. </p> 
 
   <form>
-
-  <label for="Name">* Имя</label>
-  <input autofocus type="text"  class="input-field" placeholder="Введите Ваше Имя" name="name" required>
-  <br />
-  <br />
-  <label  for="email">* Email </label>
-  <input type="email" name="email"  class="input-field" required placeholder="Введите Ваш Email">
-  <br />
-  <br />
-
-    <label for="age">* Возраст</label>  
-    <input type="number" name="age"  min="1" max="100" class="input-field" placeholder="Возраст">
-  <br/>
-  <br />
-
-  <label for="gender"> Пол</label> 
-  <select name="gender">
-  <option disabled value="Выберите один из вариантов" >Выберите что-то</option>
-  <option>--</option>
-  <option value="female">Женский</option>
-  <option value="man">Мужской</option>
-  <option value="ovether">Прочее</option>
-  </select>
-  <br />
-  <br />
-  <br />
+    <label for="Name">*Имя</label>
+      <input id="Name" autofocus type="text"  class="input-field" placeholder="Введите Ваше Имя" name="name" required>
+    <br>
+  <br>
+    <label  for="email" id="email">* Email </label>
+      <input id="email" type="email" name="email"  class="input-field" required placeholder="Введите Ваш Email">
+    <br>
+  <br>
+  <label for="age">* Возраст</label>  
+    <input id="age" type="number" name="age"  min="1" max="100" class="input-field" placeholder="Возраст">
+    <br>
+  <br>
+    <label for="gender"> Пол</label> 
+      <select id="gender" name="gender">
+        <option disabled value="Выберите один из вариантов" >Выберите что-то</option>
+        <option>--</option>
+        <option value="female">Женский</option>
+        <option value="man">Мужской</option>
+        <option value="ovether">Прочее</option>
+      </select>
+      <br>
+    <br>
+  <br>
 
   Какова ваша нынешняя карьера? Соответствует ли это карьере вашей мечты?<br><br>
 
   <textarea id="comments" class="input-field" name="comment" placeholder="" maxlength="350"></textarea>
-
-  <br />
-  <br />
-
-
+    <br>
+  <br>
     <p class="q1">Если бы у вас был шанс изменить свою нынешнюю карьеру, вы бы это сделали?</p>
-  <label class="radio_button"><input type="radio" value="yes" name="change">Да</label>
-  <label class="radio_button"><input type="radio" value="no" name="change">Нет</label>
-  <br />
-  <br />
+      <label class="radio_button"><input type="radio" value="yes" name="change">Да</label>
+      <label class="radio_button"><input type="radio" value="no" name="change">Нет</label>
+      <br>
+    <br>
 
   Поле которое Вас интересует:<br><br>
- <label class="radio_button"><input name="interest" value="Business" type="checkbox" class="interest">Бизнес</label>
-  <label class="radio_button"><input name="interest" value="Education" type="checkbox" class="interest">Образование</label>
-    <label class="radio_button"><input name="interest" value="Marketing" type="checkbox" class="interest">Маркетинг</label>
-  <label class="radio_button"><input name="interest" value="Journalism" type="checkbox" class="interest">Журналистика</label>
-  <label class="radio_button"><input name="interest" value="Psychology" type="checkbox" class="interest">Психология</label>
-  <label class="radio_button"><input name="interest" value="Mathematics" type="checkbox" class="interest">Математика</label>
+    <label class="radio_button"><input name="interest" value="Business" type="checkbox" class="interest">Бизнес</label>
+      <label class="radio_button"><input name="interest" value="Education" type="checkbox" class="interest">Образование</label>
+          <label class="radio_button"><input name="interest" value="Marketing" type="checkbox" class="interest">Маркетинг</label>
+        <label class="radio_button"><input name="interest" value="Journalism" type="checkbox" class="interest">Журналистика</label>
+      <label class="radio_button"><input name="interest" value="Psychology" type="checkbox" class="interest">Психология</label>
+    <label class="radio_button"><input name="interest" value="Mathematics" type="checkbox" class="interest">Математика</label>
   <label class="radio_button"><input name="interest" value="Programming" type="checkbox" class="interest">Программирование</label>
-
-   <br />
-   <br />
+    <br>
+   <br>
 
 
   Личные качества:<br><br>
   <label class="radio_button"><input name="qualities" value="Creative" type="checkbox" class="qualities">Творчество</label> 
-  <label class="radio_button"><input name="qualities" value="Organized" type="checkbox" class="qualities">Организованность</label>
-
-  <label class="radio_button"><input name="qualities" value="Methodical" type="checkbox" class="qualities">Систематичность</label> 
-  
-  <label class="radio_button"><input name="qualities" value="fast learner" type="checkbox" class="qualities">Быстрая обучаемость</label>
-
-    <label class="radio_button"><input name="qualities" value="Competetive" type="checkbox" class="qualities">Конкурентносопсобность</label>
-    <label class="radio_button"><input name="qualities" value="Self-educated" type="checkbox" class="qualities">Самообразование</label>
-  <label class="radio_button"><input name="qualities" value="Self-motivated" type="checkbox" class="qualities">Самомативация</label>
-  <label class="radio_button"><input name="qualities" value="Decision Maker" type="checkbox" class="qualities">Лидерство</label>
+    <label class="radio_button"><input name="qualities" value="Organized" type="checkbox" class="qualities">Организованность</label>
+      <label class="radio_button"><input name="qualities" value="Methodical" type="checkbox" class="qualities">Систематичность</label> 
+        <label class="radio_button"><input name="qualities" value="fast learner" type="checkbox" class="qualities">Быстрая обучаемость</label>
+          <label class="radio_button"><input name="qualities" value="Competetive" type="checkbox" class="qualities">Конкурентносопсобность</label>
+        <label class="radio_button"><input name="qualities" value="Self-educated" type="checkbox" class="qualities">Самообразование</label>
+        <label class="radio_button"><input name="qualities" value="Self-motivated" type="checkbox" class="qualities">Самомативация</label>
+    <label class="radio_button"><input name="qualities" value="Decision Maker" type="checkbox" class="qualities">Лидерство</label>
   <label class="radio_button"><input name="qualities" value="Communicative" type="checkbox" class="qualities">Коммуникативность</label>
+  <br>
+  <br>
 
-  
-
-
-  <br />
-  </br />
-  Увлечения: <br><br>
-  <label class="radio_button"><input name="hobbies" value="Fishing" type="checkbox" class="hobbies">Рыбалка</label>
-  <label class="radio_button"><input name="hobbies" value="Cooking" type="checkbox" class="hobbies">Готовка</label>
-   <label class="radio_button"><input name="hobbies" value="Painting" type="checkbox" class="hobbies">Рисование</label>
-  <label class="radio_button"><input name="hobbies" value="Gardening" type="checkbox" class="hobbies">Садоводство</label>
-  <label class="radio_button"><input name="hobbies" value="Trips" type="checkbox" class="hobbies">Путешествия</label>
-  <label class="radio_button"><input name="hobbies" value="Programming" type="checkbox" class="hobbies">Программирование</label>
-   <label class="radio_button"><input name="hobbies" value="Mountain Hiking" type="checkbox" class="hobbies">Восхождение в гору</label> 
- 
-  <label class="radio_button"><input name="Hobbies" value="Listening to Music" type="checkbox" class="hobbies">Прослушивание музыки</label>
-  
-
-  <br />
-  <br />
+    Увлечения: <br><br>
+    <label class="radio_button"><input name="hobbies" value="Fishing" type="checkbox" class="hobbies">Рыбалка</label>
+      <label class="radio_button"><input name="hobbies" value="Cooking" type="checkbox" class="hobbies">Готовка</label>
+        <label class="radio_button"><input name="hobbies" value="Painting" type="checkbox" class="hobbies">Рисование</label>
+            <label class="radio_button"><input name="hobbies" value="Gardening" type="checkbox" class="hobbies">Садоводство</label>
+          <label class="radio_button"><input name="hobbies" value="Trips" type="checkbox" class="hobbies">Путешествия</label>
+        <label class="radio_button"><input name="hobbies" value="Programming" type="checkbox" class="hobbies">Программирование</label>
+      <label class="radio_button"><input name="hobbies" value="Mountain Hiking" type="checkbox" class="hobbies">Восхождение в гору</label> 
+    <label class="radio_button"><input name="Hobbies" value="Listening to Music" type="checkbox" class="hobbies">Прослушивание музыки</label>
+  <br>
+  <br>
 
    <button id="submit" type="submit">Отправить</button>
 
